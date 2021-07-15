@@ -1,0 +1,31 @@
+{
+  "name": "hw12-employee-tracker",
+  "version": "1.0.0",
+  "description": "Employee tracker application interacting with mysql",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmobrienllc/hw12-employee-tracker.git"
+  },
+  "keywords": [],
+  "author": "David OBrien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmobrienllc/hw12-employee-tracker/issues"
+  },
+  "homepage": "https://github.com/dmobrienllc/hw12-employee-tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.1.2",
+    "mysql2": "^2.2.5",
+    "uniquid": "^1.1.4"
+  },
+  "engines": {
+    "node": "16.4.0"
+  }
+}
