@@ -1,10 +1,12 @@
 class Employee {
-    constructor(id, firstName, lastName,roleId,managerId) {
+    constructor(id, name,title,salary,department,manager) {
       this.id = id;
-      this.firstName = firstName;
-      this.lastName = lastName;
-      this.roleId = roleId;
-      this.roleId = managerId;
+      this.name = name;
+      this.title = title;
+      this.salary = salary;
+      this.department = department;
+      this.manager = manager;
+      this.isManager = (manager.length > 3 ? 'No' : 'Yes');
     }
 
     getId(){
@@ -12,15 +14,23 @@ class Employee {
     }
 
     getName(){
-      return (this.lastName + ", " + this.firstName);
+      return this.name;
     }
 
-    getRoleId(){
-      return this.roleId;
+    getRole(){
+      return this.title;
     }
 
-    getManagerId(){
-      return this.managerId;
+    getSalary(){
+      return this.salary;
+    }
+
+    getDepartment(){
+      return this.department;
+    }
+
+    getManager(){
+      return this.manager;
     }
   }
   module.exports = Employee;
